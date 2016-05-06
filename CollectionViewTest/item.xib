@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="item" id="gTV-IL-0wX" customClass="item">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M5V-qT-zuF">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="M5V-qT-zuF" secondAttribute="trailing" id="3bH-Kj-a29"/>
+                <constraint firstItem="M5V-qT-zuF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HYb-R8-qEZ"/>
+                <constraint firstAttribute="bottom" secondItem="M5V-qT-zuF" secondAttribute="bottom" id="huF-kC-rbB"/>
+                <constraint firstItem="M5V-qT-zuF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pG2-Fg-zdn"/>
+            </constraints>
+            <connections>
+                <outlet property="imgView" destination="M5V-qT-zuF" id="8R0-a8-I73"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
